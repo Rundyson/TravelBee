@@ -1,0 +1,172 @@
+@use "../abstract/" as *;
+@use "../base/" as *;
+
+.aboutBanner{
+background: url(/IMG/aaec3d71-group-62.png);
+  background-color: $clr--dark;
+  height: 100vh;
+  width: 100vw;
+  margin: 0 auto;
+  background-size: cover;
+  background-repeat: no-repeat;
+  @include centerAll;
+
+  h2{
+    font-size: 7rem;
+  }
+  p{
+    margin-bottom: 5rem;
+  }
+  &__image1{
+    img{
+    top: 600px;
+    position: absolute;
+    max-width: 20%;
+    left: 1550px;
+    }
+  }
+  &__image2{
+    img{
+    top: 600px;
+    position: absolute;
+    max-width: 20%;
+    right: 1550px;
+    }
+  }
+  
+}
+
+.aboutMe {
+  padding: 2rem 0;
+  &__image {
+    @include evenGrid(2, 1fr);
+    gap: 2rem;
+  }
+  &__details {
+    p {
+      color: $clr--dark;
+      line-height: 2rem;
+      margin-bottom: 3rem;
+    }
+  }
+  &__card {
+    position: relative;
+    .image1 {
+      max-width: 70%;
+      img {
+        border-top-left-radius: 15rem;
+        border-top-right-radius: 15rem;
+      }
+    }
+    .image2 {
+      position: absolute;
+      max-width: 60%;
+      top: 450px;
+      right: 10px;
+      img {
+        border: 20px solid $clr--light;
+        border-radius: 50%;
+      }
+    }
+  }
+}
+
+.popularPost {
+  padding: 2rem 0;
+  &__intro {
+    h2 {
+      @include centerAll;
+    }
+    p {
+      @include centerAll;
+      color: $clr--dark;
+      margin-bottom: 3rem;
+    }
+  }
+  &__sixcards {
+    @include evenGrid(2, 1rem);
+    gap: 3rem;
+    p {
+      color: $clr--dark;
+      margin-top: 1.5rem;
+      line-height: 1.5rem;
+      margin-bottom: 1rem;
+    }
+  }
+  &__cards {
+    @include unevenGrid(5fr 15fr, 1fr);
+    gap: 2rem;
+  }
+  &__threecards--details {
+    margin-bottom: 2rem;
+  }
+}
+
+.destinationPlaces {
+  padding: 10rem 0;
+  @include centerAll;
+  p {
+    color: $clr--dark;
+  }
+  &__card {
+    @include evenGrid(4, 1fr);
+    gap: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+  }
+}
+
+.aboutmyAdventures {
+  padding: 2rem 0;
+  &__wrapper {
+    @include unevenGrid(2fr 1fr, 1fr);
+    gap: 3rem;
+    p {
+      color: $clr--dark;
+      margin-bottom: 1.5rem;
+    }
+  }
+  &__twocards {
+    &--details {
+      position: relative;
+      margin-bottom: 2rem;
+    }
+    img {
+      height: 25rem;
+    }
+  }
+  &__minicards--smallcards {
+    @include evenGrid(2, 1fr);
+    gap: 2rem;
+    img {
+      height: 10rem;
+      margin-bottom: 1rem;
+    }
+  }
+  &__minicards--cards {
+    form input {
+      border: 2px solid $clr--dark;
+      position: relative;
+      padding: 1rem;
+      width: 30rem;
+      box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    }
+    ul i {
+      position: relative;
+      bottom: 57px;
+      left: 426px;
+      color: $clr--light;
+      padding: 20px;
+      background-color: $clr--dark;
+      &:hover {
+        background-color: transparent;
+        color: $clr--dark;
+      }
+    }
+  }
+  &__minicards--card1{
+    img{
+      height: 25rem;
+    }
+  }
+}

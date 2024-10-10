@@ -1,0 +1,49 @@
+@use "../abstract/" as *;
+@use "../base/" as *;
+
+.blueLetters{
+  font-weight: 300;
+  margin: 1rem 0;
+  font-size: 1rem;
+  color: $clr--primary;
+
+}
+.darkLetters{
+  h3{
+    font-size: 1.3rem;
+    color: $clr--dark;
+    font-weight: 600;
+  }
+}
+.darkReadmore{
+    color: $clr--dark;
+    font-weight: 800;
+    &:hover{
+      color: $clr--primary;
+      border-bottom: 1px solid $clr--primary;
+      transition: 0.3s ease;
+    }
+}
+.roundLetters{
+  background-color: $clr--primary;
+  color: $clr--light;
+  padding: 0.5rem;
+  border-radius: 2rem;
+  font-size:small;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  &:hover{
+    background-color: $clr--dark;
+    border: 1px solid $clr--dark;
+    color: $clr--dark;
+    transition: 0.3S ease;
+    color: $clr--light;
+  }
+}
+
+.dateTop{
+  border-top: 1px solid rgba($color: #0000003d, $alpha: 1.0);
+  padding-top: 1rem;
+  display: flex;
+}

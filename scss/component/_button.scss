@@ -1,0 +1,74 @@
+@use "../abstract/" as *;
+@use "../base/" as *;
+
+.btn {
+  padding: 0.8rem 2rem;
+  background-color: transparent;
+  border: 1px solid transparent;
+  font-size: 1rem;
+  &.bg--blue {
+    @extend .btn;
+    background-color: $clr--primary;
+    color: $clr--light;
+    font-weight: 100;
+    &:hover {
+      background-color: $clr--light;
+      color: $clr--primary;
+      border: 1px solid $clr--primary;
+      transition: 0.3S ease;
+    }
+  }
+  &.bg--dark {
+    @extend .btn;
+    background-color: $clr--dark;
+    color: $clr--light;
+    font-weight: 100;
+    &:hover {
+      background-color: $clr--light;
+      color: $clr--dark;
+      border: 1px solid $clr--dark;
+      transition: 0.3S ease;
+    }
+  }
+  &.bg--dark__round {
+    @extend .btn;
+    background-color: $clr--dark;
+    color: $clr--light;
+    border-radius: 50%;
+    padding: 0.5rem;
+    border: 10px solid $clr--light;
+    &:hover {
+      background-color: $clr--light;
+      color: $clr--dark;
+      transition: 0.3S ease;
+    }
+    top: 225px;
+    left: 700px;
+    position: relative;
+  }
+}
+.active{
+  color: $clr--light;
+  &.bg--color{
+    @extend .active;
+      color: $clr--primary;
+
+  }
+  
+}
+.playButton{
+  i{
+  background-color: $clr--light;
+  color: $clr--dark;
+  padding: 1rem;
+  position: absolute;
+  right: 25px;
+  top: 50px;
+  &:hover{
+    background-color: $clr--primary;
+    border: 1px solid $clr--primary;
+    color: $clr--light;
+    transition: 0.3S ease;
+  }
+  } 
+}
