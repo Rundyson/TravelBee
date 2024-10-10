@@ -1900,10 +1900,10 @@ img {
 }
 .contactPage--name {
   display: flex;
-  gap: 2rem;
+  gap: 1rem;
 }
 .contactPage img {
-  padding: 1rem;
+  padding: 1rem 0;
   height: 40rem;
 }
 
